@@ -1,0 +1,138 @@
+/*Main*/
+.aboutContainer{
+    Width: 75%;
+    height: auto;
+    margin: 1% auto;
+    background: lightgray;
+    border: solid;
+    padding: 5px;
+}
+
+/*About Content*/
+.about{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+    background: url(about/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*Social Content*/
+.social{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.row{
+    background-color: #F8F8FF;
+}
+
+.column{
+    float: left;
+    width: 33.33333333%;
+    padding: 0 8px;
+    background-color: #F8F8FF;
+}
+  
+.card{
+    margin: 8px;
+}
+
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-color:Fuchsia ;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover{
+    background-color: hotpink;
+    color: #000;
+}
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
+.social-img{
+    max-width: 100%;
+}
+
+/*Discord*/
+.discord{
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #2C2F33;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+}
+.discord-img{
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+.disc-btn-signup{
+    display: inline-block;
+    padding: .5rem 1.3rem;
+    font-size: 1.0rem;
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 0 .2rem;
+    transition: .3s;
+    text-transform: uppercase;
+    width: 20%;
+    background-color:Fuchsia ;
+    color: #fff;
+}
+
+.disc-btn-signup:hover{
+    background-color: hotpink;
+    color: #000;
+}
+
+/*Discover*/
+.discover{
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+.dis-btn-signup{
+    display: inline-block;
+    padding: .5rem 1.3rem;
+    font-size: 1.0rem;
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 0 .2rem;
+    transition: .3s;
+    text-transform: uppercase;
+    width: 20%;
+    background-color:Fuchsia ;
+    color: #fff;
+}
+
+.dis-btn-signup:hover{
+    background-color: hotpink;
+    color: #000;
+}
+
+.dis-img{
+    max-width: 100%;
+    padding-top: 10px;
+}

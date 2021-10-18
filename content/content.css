@@ -1,0 +1,312 @@
+*
+
+/**slideshow**/
+* {box-sizing: border-box}
+
+
+.mySlides
+{
+    display:none;
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #E11584;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text 
+{
+    background: white;
+    color: #FC46AA;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: auto;
+    text-align: center;
+}
+
+.numbertext 
+{
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.active, .dot:hover 
+{
+    background-color: #E75480;
+}
+
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.content-box{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    ". title title ."
+    ". image desc ."
+    ". titlespace1 titlespace1 ."
+    ". scimages scimages ."
+    ". slide slide ."
+    ". titlespace2 titlespace2 ."
+    ". reviewtitle reviewtitle ."
+    ". review review ."
+    ". titlespace3 titlespace3 .";
+}
+
+.title{
+    grid-area: title;
+    grid-column: 1/4;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.image{
+    grid-area: image;
+    grid-column-start:1;
+    grid-column-end:2;
+    text-align: center;
+    opacity: 1.0 ;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.desc{
+    grid-area: desc;
+    text-align: justify;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;   
+}
+
+.scimages{
+    grid-area: scimages;
+    grid-column: 1/4;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titlespace1{
+    grid-area: titlespace1;
+    grid-column: 1/4;
+    opacity: 0;
+}
+
+.titlespace2{
+    grid-area: titlespace2;
+    grid-column: 1/4;
+    opacity: 0;
+}
+
+.titlespace3{
+    grid-area: titlespace3;
+    grid-column: 1/4;
+    opacity: 0;
+}
+
+.slide{
+    grid-area: slide;
+    grid-column: 1/4;
+    max-width: 750px;
+    position: relative;
+    margin:auto;
+    z-index: 10;
+}
+
+.dot{
+    grid-area: slide;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-flexbox;
+    transition: background-color 0.6s ease;
+}
+
+.reviewtitle{
+    grid-area: reviewtitle;
+    grid-column: 1/4;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.review{
+    grid-area: review;
+    grid-column: 1/4;
+    text-align: justify;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+/*Anime Title Box*/
+.content-box div:nth-child(1){
+	background-color: white;
+}
+
+/*Anime Thumbnail Box*/
+.content-box div:nth-child(2){
+    background-color: transparent;
+}
+
+/*Description Box*/
+.content-box div:nth-child(3){
+	background-color: white;
+}
+
+/*Empty Space Box*/
+.content-box div:nth-child(4){
+    background-color: transparent;
+}
+
+/*Empty Space Box 2*/
+.content-box div:nth-child(5){
+	background-color: white;
+}
+
+/*Preview Title Box 2*/
+.content-box div:nth-child(6){
+	background-color: white;
+}
+
+/*Anime Review Title Box*/
+.content-box div:nth-child(7){
+	background-color: white;
+}
+
+/*Anime Review Box*/
+.content-box div:nth-child(8){
+	background-color: hotpink;
+}
+
+.content-box div:nth-child(9){
+	background-color: transparent;
+}
+
+.txta{ 
+    width:800px; 
+    height:200px;
+    resize:none;
+    font-family: cursive; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.revbx{
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.revbx p {
+    font-family: cursive;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100;
+    
+}
+
+.edit-form{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.edit-form .btn-edit{
+    display: inline-block;
+    padding: .5rem 1.3rem;
+    font-size: .8rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 0 .2rem;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.edit-form .btn-edit:hover{
+    background-color: hotpink;
+    color: White;
+    font-weight: bold;
+}
+
+.delete-form{
+    position: absolute;
+    top: 0px;
+    right: 80px;
+}
+
+.delete-form .btn-delete{
+    display: inline-block;
+    padding: .5rem 1.3rem;
+    font-size: .8rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 0 .2rem;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.delete-form .btn-delete:hover{
+    background-color: hotpink;
+    color: White;
+    font-weight: bold;
+}

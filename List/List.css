@@ -1,0 +1,102 @@
+*
+.content-box{/*Changes Made Here*/
+    display: grid;
+    width: 950px;
+    margin: 0px auto;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    ". title title title title title."
+    ". animetable animetable animetable animetable animetable ."
+    ". emptyspace1 emptyspace1 emptyspace1 emptyspace1 emptyspace1 ."
+}
+
+.emptyspace1{
+    grid-area: emptyspace1;
+    grid-column: 1/5;
+    opacity: 0;
+}
+
+.title{
+    grid-area: title;
+    grid-column: 1/5;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bg1{
+    background-color: fuchsia;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.animetable, th, td{ 
+    grid-area: animetable;
+    grid-column: 1/5;
+    width: 950px;
+    background-color: pink;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
+    border-right: 5px solid pink;
+    border-left: 5px solid pink;
+    border-collapse: separate;
+    border-spacing: 10px;
+
+}
+
+td img{
+    display: table-cell;
+    vertical-align: text-bottom;
+
+}
+
+.zoom{
+    color: fuchsia;
+    align-content: center;
+    text-align: center;
+    padding: 15px;
+    transition: transform .2s;
+    max-width: 425px;
+    min-width: 425px;       
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:none;
+    table-layout: fixed; 
+    background-size: 100% auto ;
+    vertical-align:bottom;
+    text-align:center;
+}
+
+.zoom text{
+    background-color: white;
+    table-layout: fixed;
+}
+
+.zoom:hover{
+    transform: scale(1.02);
+    background-color: #fccfd7;
+    cursor: pointer;
+}
+
+/*Anime Title Box*/
+.content-box div:nth-child(1){
+	background-color: white;
+}
+
+/*Anime List Table*/
+.content-box div:nth-child(2){
+    background-color: pink;
+}
+
+/*Empty Space 1*/
+.content-box div:nth-child(3){
+    background-color: transparent;
+}

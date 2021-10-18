@@ -1,0 +1,124 @@
+*
+.content-box{/*Changes Made Here*/
+    display: grid;
+    width: 950px;
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". title title title."
+    ". usertable usertable usertable ."
+    ". emptyspace1 emptyspace1 emptyspace1 ."
+}
+
+.title{
+    grid-area: title;
+    grid-column: 1/4;
+    height: 150px;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    
+}
+
+.emptyspace1{
+    grid-area: emptyspace1;
+    grid-column: 1/4;
+    opacity: 0;
+    background-color: transparent;
+
+}
+
+
+.usertable{
+    grid-area: admintable;
+    grid-column: 1/4;
+    background-color: pink;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+
+.user-list{
+    color: fuchsia;
+    background-color: rgb(179, 61, 80);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    align-items: center;
+    margin-left:auto; 
+    margin-right:auto;
+
+}
+
+.user-list img{
+    background-size: 100% auto;
+    height: 250px;
+    max-height: 250px;
+    min-height: 250px;
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+
+input[type=search-user-name] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+input[type=search-user-name]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+td img{
+    display: table-cell;
+}
+
+.error-img{
+ display: inline-table;
+}
+
+/*
+.zoom{
+    color: fuchsia;
+    align-content: center;
+    padding: 15px;
+    max-width: 425px;
+    min-width: 425px;       
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:none;
+    background-size: 100% auto ;
+    vertical-align:bottom;
+    text-align:center;   
+}
+
+.zoom text{
+    background-color: white;
+    table-layout: fixed;
+}
+
+.zoom:hover{
+    transform: scale(1.02);
+    background-color: #fccfd7;
+    cursor: pointer;
+}
+
+*/

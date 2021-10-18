@@ -1,0 +1,235 @@
+*
+.content-box{/*Changes Made Here*/
+    display: grid;
+    width: 950px;
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". title title title."
+    ". leftbar admininfo admininfo ."
+    ". title2 title2 title2."
+    ". admintable admintable admintable ."
+    ". emptyspace1 emptyspace1 emptyspace1 ."
+}
+
+.title{
+    grid-area: title;
+    grid-column: 1/4;
+    height: 150px;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+}
+
+.emptyspace1{
+    grid-area: emptyspace1;
+    grid-column: 1/4;
+    opacity: 0;
+    background-color: transparent;
+
+}
+
+.leftbar{
+    grid-area: leftbar;
+    grid-column: 1/2;
+    background-color: grey;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-collapse: separate;
+    border-spacing: 5px;
+
+}
+
+
+.admininfo{
+    grid-area: admininfo;
+    grid-column: 2/4;
+    background-color: pink;
+    text-align: center;
+}
+
+.admintable{
+    grid-area: admintable;
+    grid-column: 1/4;
+    background-color: pink;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+
+.title2{
+    grid-area: title2;
+    grid-column: 1/4;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+}
+
+.bg1{
+    background-color: fuchsia;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td img{
+    display: table-cell;
+    vertical-align: text-bottom;
+}
+
+.error-img{
+    display: inline-table;
+   }
+   
+
+.zoom{
+    
+    color: fuchsia;
+    align-content: center;
+    transition: transform .2s;
+    height: 250px;
+    border:none;
+    table-layout: fixed; 
+    background-size: 100% auto ;
+    vertical-align:bottom;
+    text-align:center;   
+    
+}
+
+.zoom text{
+    background-color: white;
+    table-layout: fixed;
+}
+
+.zoom:hover{
+    transform: scale(1.02);
+    background-color: #fccfd7;
+    cursor: pointer;
+
+}
+
+
+
+.desc{
+    background-color: rgb(255, 129, 150);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-spacing: 10px;
+    margin: 10px;
+
+}
+
+.admin-list{
+    color: fuchsia;
+    background-color: rgb(179, 61, 80);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    align-items: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.admin-list img{
+    background-size: 100% auto;
+    height: 250px;
+    max-height: 250px;
+    min-height: 250px;
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.admin-data{
+    color: fuchsia;
+    font-size: 10px;
+    align-content: center;
+    transition: transform .2s;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    border:none;
+    table-layout: fixed; 
+    background-size: 100% auto ;
+    vertical-align:bottom;
+    text-align:center;   
+}
+
+.admin-data text{
+    background-color: white;
+    table-layout: fixed;
+}
+
+.admin-data:hover{
+    transform: scale(1.02);
+    background-color: #fccfd7;
+    cursor: pointer;
+
+}
+
+input[type=search-admin-name] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+input[type=search-admin-name]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+/*
+.zoom{
+    color: fuchsia;
+    align-content: center;
+    padding: 15px;
+    max-width: 425px;
+    min-width: 425px;       
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:none;
+    background-size: 100% auto ;
+    vertical-align:bottom;
+    text-align:center;   
+}
+
+.zoom text{
+    background-color: white;
+    table-layout: fixed;
+}
+
+.zoom:hover{
+    transform: scale(1.02);
+    background-color: #fccfd7;
+    cursor: pointer;
+}
+
+*/

@@ -1,0 +1,66 @@
+/*New*/
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+  
+.form-box{
+  width: 40%; /*Size of the form. Use % to edit*/
+  height: auto;
+  position: relative;
+  margin: 6% auto; /*Upper and Lower Margin*/
+  background: #fff;
+  outline-style: solid;
+  outline-color: #000;
+  padding: 5px;
+}
+  
+/*Picture*/
+.resize{
+  max-width: 100%;
+  height: auto;
+  display: block;
+} 
+  
+/* Full-width inputs */
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+  
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  }
+  
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  }
+  
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+ 
+/* Add padding to containers */
+.ResetContainer {
+  padding: 5px;
+}
+  
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
